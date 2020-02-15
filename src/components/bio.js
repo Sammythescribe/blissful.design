@@ -55,7 +55,7 @@ const Bio = () => {
       />
       <p>
         Written by <strong>{author}</strong> who lives and works in Kerville,
-        Texas writing insightful things.
+        Texas, writing insightful things.
         {` `}
         <a href={`https://instagram.com/${social.instagram}`}>
           You should follow her on Instagram
