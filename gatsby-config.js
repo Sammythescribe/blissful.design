@@ -3,9 +3,9 @@ module.exports = {
     title: `Blissful Design`,
     author: `Samara Bliss`,
     description: `Blissful.`,
-    siteUrl: `https://blissful-design.netlify.com/`,
+    siteUrl: `https://blissful.design/`,
     social: {
-      twitter: `samarabliss`,
+      instagram: `samarabliss`,
     },
   },
   plugins: [
