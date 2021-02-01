@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Blissful Design`,
+    title: `Blissful Ink`,
     author: `Samara Bliss`,
-    description: `Blissful.`,
+    description: `Blissful in ink.`,
     siteUrl: `https://blissful.design/`,
     social: {
       instagram: `samarabliss`,
