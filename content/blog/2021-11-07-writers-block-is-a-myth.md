@@ -1,0 +1,31 @@
+---
+title: Writer's Block is a Myth
+date: 2021-11-07T00:53:10.635Z
+description: I have a theory that 'writer's block' is a necessary phase of the
+  creative process.
+---
+<!--StartFragment-->
+
+As a young creative writer, I have read my fair share of writing books. You know the ones I’m talking about, the ones that are meant to pump you up with talk of dedication, discipline, and the ecstasy of finished pieces. I’ve read some writing books that are helpful, some that reminded me why I love writing, and some that were just plain boring. But they all tote the same basic ideas: write every day, write as much as possible, and never forget that writing is work. If you really love writing, these three basic rules are easy to follow, right? 
+
+No, they’re not. My husband said the other day that he finally understood the term ‘tortured artist’ after living with me for the past three years, two of which I have been working on my book. “You artists rip yourselves apart every day and then wake up like nothing happened, ready to do it all over again.” I just blinked at him, realizing that I didn’t want to have that relationship with my art anymore. It had almost become a toxic relationship where I would rip myself apart inside, and writing was the only thing that made me feel whole again. 
+
+The first year working on my first novel (still isn’t finished!) I had the entire setup that I’d learned from all those writing books and writing classes. I would wake up early, write for two-three hours, then go about my day. If I missed a day of writing or didn’t get the full two hours, I would feel like a failure. Because the message I had received was: in order to prove you love your art, you must suffer for it. You must dedicate yourself to it every day. And the way to ‘dedicate’ myself to writing was to produce work every day. Anything less and I wasn’t trying hard enough and I would never be successful. 
+
+After that first year I was pretty proud of myself for working on my book nearly every single day. But then came the editing process. And you know what? All those draft pages from those days where I felt uninspired, or exhausted, or just off...they got deleted in the editing process. The pages I kept, the ones that were good, were from those days where words flowed onto the page in a thick and steady stream like honey. You know the good golden days I’m talking about, where your art feels natural and sweet and you never want to stop creating it. 
+
+I decided for the second draft I would only write on those good golden days. Over the next year I found that if I just let myself be I would always come back around to creating something I was proud of. When I wasn’t producing work I was daydreaming, and watching movies, and spending time with friends and family, and cooking, and reading thick books that I could really sink my teeth into. My relationship with art turned from daily dedication to daily exploration and enjoyment. 
+
+And then, in early November, it hit me: the infamous ‘writer’s block’ is a myth. As I went about my days I felt the idea brewing inside me like blasphemy. My creative spirit, once freed from the daily task of producing, soon fell into a natural rhythm. Create, enjoy, rest, create, enjoy, rest, create, enjoy, rest. I came to view the creative process as cyclical. Think of the sleep cycle. The sleep cycle includes four stages: NREM N1 (falling asleep), NREM N2 (light sleep), NREM N3 (slow wave sleep), REM Stage R (dreaming stage). Each of these stages play a key role in the sleep cycle. If any of the sleep stages are interrupted, you run the risk of losing a good night’s sleep. Have you ever woken up from a nap feeling jet lagged? You may have slept only to the slow wave sleep stage, never reaching the dreaming stage, which is necessary for feeling rested and rejuvenated. 
+
+What if so-called ‘writer’s block’ is actually just the deep sleep phase of the creative cycle? We all have passion for our art, so we’ve been told that while writer’s block does happen, it’s something we must push through in order to honor that artistic passion. But in my experience this past year, I’ve found that ‘writer’s block’ is best honored as a time of rest. When I don’t feel like producing work, I take it as a signal to slow down, back off, and consume as much art that inspires me as possible. This is the deep sleep of creativity where we allow ourselves to be nourished. After an undetermined amount of time (sometimes a few days, sometimes a few months) ideas will start percolating up to the surface of my brain. I see this as the REM or ‘dreaming’ stage. It’s important not to automatically release the ideas, as they are still dreams. I hold onto them and let them grow like spinach sprouts. And when their roots are deep enough, and I wake up to one of those good golden days, it is finally time to plant them on paper. 
+
+Thus begins the awake phase, where everything feels alive and bright. Just like the deep sleep phase, it can also last an undetermined amount of time. But it’s best to create as much as I can during the awake phase until I feel satisfied. And, like clockwork, I find myself nodding off again, falling into that deep creative state, the one I have learned to appreciate. 
+
+I mentioned before that this idea felt like blasphemy to me. I think the way I was taught to view and experience art all my life was production focused. I felt like I wasn’t a real artist unless I had a sellable product at the end of all my labors. And, no offense to the many beautiful books on writing that I’ve read, but most of them put forth all these hippy dippy love letters to the ‘process’ when really their process is painfully product oriented THE ENTIRE TIME. 
+
+I am on a mission to abolish the idea of writer’s block, which is rooted in product centered creativity. I would instead replace writer’s block with the idea that the creative process includes many different phases of creativity, all of which are necessary for the enjoyment of the artist. Our relationship with our art doesn’t have to be toxic. It can be celebratory and lovely in all its phases.
+
+
+
+<!--EndFragment-->
