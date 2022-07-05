@@ -8,7 +8,7 @@ const Layout = ({ location, title, children }) => (
   
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery1 {
+      query SiteTitleQuery {
         site {
           siteMetadata {
             title
@@ -39,43 +39,43 @@ const Layout = ({ location, title, children }) => (
         }}
       >
       <header>
-      <h3
-      style={{
-        fontFamily: `Montserrat, sans-serif`,
-        marginTop: 0,
-      }}
-    >
-      <Link
+      <h1
         style={{
-          boxShadow: `none`,
-          textDecoration: `none`,
-          color: `inherit`,
+          ...scale(1.5),
+          marginBottom: rhythm(1.5),
+          marginTop: 0,
         }}
-        to={`/`}
       >
-        {title}
-      </Link>
-    </h3>
-    <div>
-    <nav>
-      <ul style={{ display: "flex", flex: 1 }}>
-        {data.site.siteMetadata.menuLinks.map(link => (
-          <li
-            key={link.name}
-            style={{
-              listStyleType: `none`,
-              padding: `1rem`,
-            }}
-          >
-            <Link to={link.link}>
-              {link.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  </div>
-
+        <Link
+          style={{
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
+          }}
+          to={`/`}
+        >
+        {data.site.siteMetadata.title}
+        </Link>
+      </h1>
+      <div>
+      <nav>
+        <ul style={{ display: "flex", flex: 1 }}>
+          {data.site.siteMetadata.menuLinks.map(link => (
+            <li
+              key={link.name}
+              style={{
+                listStyleType: `none`,
+                padding: `1rem`,
+              }}
+            >
+              <Link to={link.link}>
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
     </header>
 
         <main>{children}</main>
