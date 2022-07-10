@@ -49,6 +49,8 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
+      <StaticImage src="../../content/assets/profile-pic.png" layout="constrained" height={height} alt="Blissful Ink" />
+
       <p>
         Written by <strong>{author}</strong> who lives and works in Kerville,
         Texas, writing insightful things.
