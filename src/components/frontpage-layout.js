@@ -4,8 +4,6 @@ import { Helmet } from 'react-helmet'
 
 import { rhythm, scale } from "../utils/typography"
 
-import "../sass/blog.scss"
-
 const Layout = ({ location, title, children }) => (
   
   <StaticQuery

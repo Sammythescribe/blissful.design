@@ -18,17 +18,18 @@ const Services = ({ location, data }) => {
         description= 'Services and Prices'
       />
       <header>
-      <section class="hero is-info is-medium is-bold">
-      <div class="hero-body">
-          <div class="container has-text-centered">
-              <h1 class="title">Services</h1>
-          </div>
-      </div>
-    </section>
-</header>
+      <h1
+        style={{
+          marginTop: rhythm(1),
+          marginBottom: 0,
+        }}
+      >
+        Services
+      </h1>
+    </header>
       <div>
       <div>
-      <h3 class="title is-3">Content Editing</h3>
+      <h3>Content Editing</h3>
       <p>I will read your work in its entirety and provide feedback on pacing, character development, story line, plot, and thematic elements.</p>
       <ul>
         <li><span style={{float: 'left'}}>Short Works (1-50 pages)</span><span style={{float: 'right'}}>$100</span></li>
