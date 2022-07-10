@@ -1,8 +1,9 @@
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import { Helmet } from 'react-helmet'
-
-import { rhythm, scale } from "../utils/typography"
+import Navbar from '../components/navbar'
+import { StaticImage } from "gatsby-plugin-image"
+import "../sass/blog.scss"
 
 const Layout = ({ location, title, children }) => (
   
@@ -29,62 +30,33 @@ const Layout = ({ location, title, children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-        </Helmet>
-        <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-      <header>
-      <h3
-      style={{
-        fontFamily: `Montserrat, sans-serif`,
-        marginTop: 0,
-      }}
-    >
-      <Link
-        style={{
-          boxShadow: `none`,
-          textDecoration: `none`,
-          color: `inherit`,
-        }}
-        to={`/`}
-      >
-        {title}
-      </Link>
-    </h3>
-    <div>
-    <nav>
-      <ul style={{ display: "flex", flex: 1 }}>
-        {data.site.siteMetadata.menuLinks.map(link => (
-          <li
-            key={link.name}
-            style={{
-              listStyleType: `none`,
-              padding: `1rem`,
-            }}
-          >
-            <Link to={link.link}>
-              {link.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  </div>
+        </Helmet>    
+        <header>
+          <Navbar pages={data.site.siteMetadata.menuLinks} />
+          <section class="hero is-info is-medium is-bold">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <StaticImage src="../../content/assets/Blissful_Ink.png" height="150" layout="constrained" alt="Blissful Ink" />
+                    <StaticImage src="../../content/assets/Text_White@300x.png" height="150" layout="constrained"alt="Blissful Ink" />
+                </div>
+            </div>
+          </section>  
+        </header>
 
-    </header>
-
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+        <main>
+          <div class="container">
+            <section class="articles">
+                <div class="column is-8 is-offset-2">
+                  {children}
+                  <footer class="footer" >
+                    © {new Date().getFullYear()}, Built with
+                    {` `}
+                    <a href="https://www.gatsbyjs.org">Gatsby</a>
+                  </footer>
+                  </div>
+            </section>
+          </div>
+        </main>
       </React.Fragment>
     )}
   />
