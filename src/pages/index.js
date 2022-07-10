@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Layout from "../components/frontpage-layout"
+import Layout from "../components/layout"
 import SeO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
@@ -54,10 +54,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        menuLinks {
-          name
-          link
-        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

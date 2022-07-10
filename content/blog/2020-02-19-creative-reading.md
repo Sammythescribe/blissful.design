@@ -3,7 +3,7 @@ title: Creative Reading
 date: 2020-02-19T05:14:08.978Z
 description: '9 tips to help you practice active, creative reading'
 ---
-![](/img/reading-nook.jpg)
+![](/img/reading nook.jpg)
 
 
 

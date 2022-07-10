@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SeO from "../components/seo"
+import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,50 +18,63 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-          <div class="card article">
-              <div class="card-content">
-                  <div class="media">                            
-                      <div class="media-content has-text-centered">
-                          <p class="title article-title">{post.frontmatter.title}</p>
-                          <p class="subtitle is-6 article-subtitle">
-                              {post.frontmatter.date}
-                          </p>
-                      </div>
-                  </div>
-                  <div class="content article-body">
-                      <section dangerouslySetInnerHTML={{ __html: post.html }} />
-                  </div>
-                  <footer class="footer">
-                      <Bio />
-                      </footer>
-                      <nav>
-                        <ul
-                          style={{
-                            display: `flex`,
-                            flexWrap: `wrap`,
-                            justifyContent: `space-between`,
-                            listStyle: `none`,
-                            padding: 0,
-                          }}
-                        >
-                          <li>
-                            {previous && (
-                              <Link to={previous.fields.slug} rel="prev">
-                                ← {previous.frontmatter.title}
-                              </Link>
-                            )}
-                          </li>
-                          <li>
-                            {next && (
-                              <Link to={next.fields.slug} rel="next">
-                                {next.frontmatter.title} →
-                              </Link>
-                            )}
-                          </li>
-                        </ul>
-                      </nav>
-              </div>
-          </div>
+        <article>
+          <header>
+            <h1
+              style={{
+                marginTop: rhythm(1),
+                marginBottom: 0,
+              }}
+            >
+              {post.frontmatter.title}
+            </h1>
+            <p
+              style={{
+                ...scale(-1 / 5),
+                display: `block`,
+                marginBottom: rhythm(1),
+              }}
+            >
+              {post.frontmatter.date}
+            </p>
+          </header>
+          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <hr
+            style={{
+              marginBottom: rhythm(1),
+            }}
+          />
+          <footer>
+            <Bio />
+          </footer>
+        </article>
+
+        <nav>
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          >
+            <li>
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  ← {previous.frontmatter.title}
+                </Link>
+              )}
+            </li>
+            <li>
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} →
+                </Link>
+              )}
+            </li>
+          </ul>
+        </nav>
       </Layout>
     )
   }
