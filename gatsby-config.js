@@ -4,20 +4,10 @@ module.exports = {
     title: `Blissful Ink`,
     author: `Samara Bliss`,
     description: `Blissful in ink.`,
-    siteUrl: `https://blissful.ink/`,
+    siteUrl: `https://blissful.design/`,
     social: {
       instagram: `samarabliss`,
     },
-    menuLinks:[
-      {
-         name:'home',
-         link:'/'
-      },
-      {
-         name:'services',
-         link:'/services'
-      }
-    ]
   },
   plugins: [
     {
