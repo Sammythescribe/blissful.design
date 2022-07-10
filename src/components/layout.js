@@ -36,7 +36,7 @@ const Layout = ({ location, title, children }) => (
           <section class="hero is-info is-medium is-bold">
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <StaticImage src="../../content/assets/Blissful_Ink.png" height="150" layout="constrained" alt="Blissful Ink" />
+                    <StaticImage src="../../content/assets/blissful_ink.png" height="150" layout="constrained" alt="Blissful Ink" />
                     <StaticImage src="../../content/assets/Text_White@300x.png" height="150" layout="constrained"alt="Blissful Ink" />
                 </div>
             </div>
