@@ -15,6 +15,11 @@ html,body {
 .navbar {
   min-height: 75px;
 }
+
+.navbar-item img {
+    max-height: none
+}
+
 .navbar.is-white {
   background: #F0F2F4;
 }
