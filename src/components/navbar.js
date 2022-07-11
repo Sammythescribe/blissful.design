@@ -40,7 +40,7 @@ export default class Navbar extends React.Component {
             <div className="navbar-brand">
                 <a className="navbar-item" href="/">
                     {/* <StaticImage src="../../content/assets/blissful_ink.png" layout="fixed" width={navLogoSize} height={navLogoSize} alt="Blissful Ink" /> */}
-                    <StaticImage src="../../content/assets/blissful_ink.png" height={75} alt="Blissful Ink" />
+                    <StaticImage src="../../content/assets/blissful_ink.png" height={75} width={75} layout="fixed" alt="Blissful Ink" />
                 </a>
                 {/* <NavbarItem name="logo" link="/" /> */}
                 <NavbarBurger
