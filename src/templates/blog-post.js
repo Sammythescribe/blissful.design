@@ -17,50 +17,47 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-          <div className="card article">
-              <div className="card-content">
-                  <div className="media">                            
-                      <div className="media-content has-text-centered">
-                          <p className="title article-title">{post.frontmatter.title}</p>
-                          <p className="subtitle is-6 article-subtitle">
-                              {post.frontmatter.date}
-                          </p>
-                      </div>
-                  </div>
-                  <div className="content article-body">
-                      <section dangerouslySetInnerHTML={{ __html: post.html }} />
-                  </div>
-                  <footer className="footer">
-                      <Bio />
-                      </footer>
-                      <nav>
-                        <ul
-                          style={{
-                            display: `flex`,
-                            flexWrap: `wrap`,
-                            justifyContent: `space-between`,
-                            listStyle: `none`,
-                            padding: 0,
-                          }}
-                        >
-                          <li>
-                            {previous && (
-                              <Link to={previous.fields.slug} rel="prev">
-                                ← {previous.frontmatter.title}
-                              </Link>
-                            )}
-                          </li>
-                          <li>
-                            {next && (
-                              <Link to={next.fields.slug} rel="next">
-                                {next.frontmatter.title} →
-                              </Link>
-                            )}
-                          </li>
-                        </ul>
-                      </nav>
-              </div>
+        <div className="card article">
+          <div className="card-content">
+            <div className="media">                            
+                <div className="media-content has-text-centered">
+                    <p className="title article-title">{post.frontmatter.title}</p>
+                    <p className="subtitle is-6 article-subtitle">
+                        {post.frontmatter.date}
+                    </p>
+                </div>
+            </div>
+            <div className="content article-body">
+                <section dangerouslySetInnerHTML={{ __html: post.html }} />
+            </div>
+            <nav>
+              <ul
+                style={{
+                  display: `flex`,
+                  flexWrap: `wrap`,
+                  justifyContent: `space-between`,
+                  listStyle: `none`,
+                  padding: 0,
+                }}
+              >
+                <li>
+                  {previous && (
+                    <Link to={previous.fields.slug} rel="prev">
+                      ← {previous.frontmatter.title}
+                    </Link>
+                  )}
+                </li>
+                <li>
+                  {next && (
+                    <Link to={next.fields.slug} rel="next">
+                      {next.frontmatter.title} →
+                    </Link>
+                  )}
+                </li>
+              </ul>
+            </nav>
           </div>
+        </div>
       </Layout>
     )
   }

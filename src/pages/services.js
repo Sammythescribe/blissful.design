@@ -10,7 +10,6 @@ const Services = ({ location, data }) => {
 //function Services(props) {
   const siteTitle = data.site.siteMetadata.title
 
-
   return (
     <Layout location={location} title={siteTitle}>
       <SeO

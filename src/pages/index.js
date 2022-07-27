@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/frontpage-layout"
+import Layout from "../components/layout"
 import SeO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import { StaticImage } from "gatsby-plugin-image"
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,31 +15,35 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SeO title="All posts" />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
+            <div className="card article" key={node.fields.slug}>
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-center">
+                      <StaticImage src="../../content/assets/profile-pic.jpg" className="author-image" alt="Samara Bliss" />
+                  </div>
+                  <div className="media-content has-text-centered">
+                      <p className="title article-title">
+                          {title}
+                      </p>
+                      <p className="subtitle is-6 article-subtitle">{node.frontmatter.description}</p>
+                  </div>
+                </div>
+                <div className="content article-body">
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.excerpt,
+                    }}
+                  />
+                </div>
+              </div>
+              <footer className="card-footer">
+              <span className="card-footer-item">{node.frontmatter.date}</span>
+              <Link className="card-footer-item" to={node.fields.slug}>... read more</Link>
+              </footer>
+            </div>
           )
         })}
       </Layout>
@@ -63,7 +67,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 280)
           fields {
             slug
           }

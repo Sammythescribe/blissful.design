@@ -3,10 +3,10 @@ import { StaticQuery, graphql, Link } from "gatsby"
 import { Helmet } from 'react-helmet'
 import Navbar from '../components/navbar'
 import { StaticImage } from "gatsby-plugin-image"
+import Bio from "../components/bio"
 import "../sass/blog.scss"
 
 const Layout = ({ location, title, children }) => (
-  
   <StaticQuery
     query={graphql`
       query SiteTitleQuery1 {
@@ -46,14 +46,15 @@ const Layout = ({ location, title, children }) => (
         <main>
           <div className="container">
             <section className="articles">
-                <div className="column is-8 is-offset-2">
-                  {children}
-                  <footer className="footer" >
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <a href="https://www.gatsbyjs.org">Gatsby</a>
-                  </footer>
-                  </div>
+              <div className="column is-8 is-offset-2">
+                {children}
+                <footer className="footer" >
+                  <Bio />
+                  © {new Date().getFullYear()}, Built with
+                  {` `}
+                  <a href="https://www.gatsbyjs.org">Gatsby</a>
+                </footer>
+              </div>
             </section>
           </div>
         </main>
