@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
                   />
                 </div>
                 <footer className="card-footer">
-                  <span className="card-footer-item">{node.frontmatter.date}</span>
+                  <div className="card-footer-item">{node.frontmatter.date}</div>
                   <Link className="card-footer-item" to={node.fields.slug}>... read more</Link>
                 </footer>
               </div>
