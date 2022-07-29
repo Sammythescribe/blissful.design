@@ -21,10 +21,13 @@ class BlogIndex extends React.Component {
             <div className="card article" key={node.fields.slug}>
               <div className="card-content">
                 <div className="media">
+                {/*
                   <div className="media-center">
                       <StaticImage src="../../content/assets/profile-pic.jpg" className="author-image" alt="Samara Bliss" />
                   </div>
+                */}
                   <div className="media-content has-text-centered">
+                    <p className="subtitle is-6 article-subtitle">{node.frontmatter.date}</p>
                       <p className="title article-title">
                           {title}
                       </p>
@@ -38,10 +41,9 @@ class BlogIndex extends React.Component {
                     }}
                   />
                 </div>
-                <footer className="card-footer">
-                  <div className="card-footer-item">{node.frontmatter.date}</div>
-                  <Link className="card-footer-item" to={node.fields.slug}>... read more</Link>
-                </footer>
+                <div className="media-content has-text-centered">
+                  <p className="subtitle is-6 article-subtitle"><Link to={node.fields.slug}>read more</Link></p>
+                </div>
               </div>
             </div>
           )
