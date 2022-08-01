@@ -92,3 +92,52 @@ div.column.is-8:first-child {
 .promo-block .container {
   margin: 1rem 5rem;
 }
+
+h1.title {
+  margin-bottom: 1em;
+}
+
+ul.service {
+	position: relative;
+	margin-left: 0;
+	padding-left: 1.2em;
+  max-width: 120em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none}
+ul.service li:before {
+    content: "\2756";
+    position: absolute;
+    left: 0;
+  }
+ul.service li {
+  padding-left: 1.5em;
+}
+ul.service li:after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "}
+ul.service span:first-child {
+  padding-right: 0.33em;
+  background: white}
+ul.service span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+  position: relative;
+  z-index: 5
+}
+  
