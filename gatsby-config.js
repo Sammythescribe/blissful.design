@@ -2,7 +2,7 @@ module.exports = {
   flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: {
     title: `Blissful Ink`,
-    author: `Samara Bliss`,
+    author: `Samara`,
     description: `Blissful in ink.`,
     siteUrl: `https://blissful.ink/`,
     social: {

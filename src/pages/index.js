@@ -23,7 +23,7 @@ class BlogIndex extends React.Component {
                 <div className="media">
                 {/*
                   <div className="media-center">
-                      <StaticImage src="../../content/assets/profile-pic.jpg" className="author-image" alt="Samara Bliss" />
+                      <StaticImage src="../../content/assets/profile-pic.jpg" className="author-image" alt="Samara" />
                   </div>
                 */}
                   <div className="media-content has-text-centered">

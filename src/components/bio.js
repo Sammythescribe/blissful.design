@@ -54,12 +54,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in Kerville,
-        Texas, writing insightful things.
-        {` `}
-        <a href={`https://instagram.com/${social.instagram}`}>
-          You should follow her on Instagram
-        </a>
+        <strong>{author}</strong> earned her degree in English Literature from Schreiner University in 2019. Writing is one of her many passions along with cooking, daydreaming, and spending time with loved ones. She lives in Kerrville, Texas with her husband, Jeff, and their two cats, Dexter and Katara.
       </p>
     </div>
   )
