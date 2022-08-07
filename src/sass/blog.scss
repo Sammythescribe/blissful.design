@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+// If need, change your variables before importing Bulma
+// $title-color: #ff0000;
+
+
+
+@import "~bulma/bulma.sass";
+
+html,body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    background: #F0F2F4;
+  }
+.navbar {
+  min-height: 75px;
+}
+
+.navbar-item img {
+    max-height: none
+}
+
+.navbar.is-white {
+  background: #F0F2F4;
+}
+.navbar-brand .brand-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-height: 75px;
+}
+.hero-body
+{background-image: url("/img/banner.jpeg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 500px;
+}
+.articles {
+  margin: 5rem 0;
+  margin-top: -200px;
+}
+.articles .content p {
+    line-height: 1.9;
+    margin: 15px 0;
+}
+.author-image {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+}
+.media-center {
+  display: block;
+  margin-bottom: 1rem;
+}
+.media-content {
+  margin-top: 3rem;
+}
+.article, .promo-block {
+  margin-top: 6rem;
+}
+div.column.is-8:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+.article-title {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2;
+}
+.article-subtitle {
+  color: #909AA0;
+  margin-bottom: 3rem;
+}
+.article-body {
+  line-height: 1.4;
+}
+@media screen and (orientation: landscape) {
+  .article-body {
+    margin: 0 6rem;
+  }  
+}
+@media screen and (orientation: portrait) {
+  .article-body {
+    margin: 0 3rem;
+  }  
+}
+.promo-block .container {
+  margin: 1rem 5rem;
+}
+
+h1.title {
+  margin-bottom: 1em;
+}
+
+ul.service {
+	position: relative;
+	margin-left: 0;
+	padding-left: 1.2em;
+  max-width: 120em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none}
+ul.service li:before {
+    content: "\2756";
+    position: absolute;
+    left: 0;
+  }
+ul.service li {
+  padding-left: 1.5em;
+}
+ul.service li:after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "}
+ul.service span:first-child {
+  padding-right: 0.33em;
+  background: white}
+ul.service span + span {
+  float: right;
+  padding-left: 0.33em;
+  background: white;
+  position: relative;
+  z-index: 5
+}
+  

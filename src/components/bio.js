@@ -7,7 +7,7 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 import { rhythm } from "../utils/typography"
 
@@ -37,16 +37,21 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5),
+        marginBottom: rhythm(1.5),
       }}
     >
-      <Image
+      <StaticImage
         fixed={data.avatar.childImageSharp.fixed}
+        src="../../content/assets/profile-pic.jpg"
         alt={author}
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
+          maxWidth: 75,
+          maxHeight: 75,
           minWidth: 50,
+          minHeight: 50,
+          
           borderRadius: `100%`,
         }}
         imgStyle={{
@@ -54,12 +59,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in Kerville,
-        Texas, writing insightful things.
-        {` `}
-        <a href={`https://instagram.com/${social.instagram}`}>
-          You should follow her on Instagram
-        </a>
+        <strong>{author}</strong> earned her degree in English Literature from Schreiner University in 2019. Writing is one of her many passions along with cooking, daydreaming, and spending time with loved ones. She lives in Kerrville, Texas with her husband, Jeff, and their two cats, Dexter and Katara.
       </p>
     </div>
   )
